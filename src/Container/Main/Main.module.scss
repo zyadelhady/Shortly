@@ -1,0 +1,70 @@
+.Main {
+  padding: 2rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 5rem;
+
+  &Left {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-weight: 700;
+      font-size: 4rem;
+      color: hsl(255, 11%, 22%);
+    }
+
+    p {
+      color: hsl(0, 0%, 75%);
+      font-size: 1rem;
+      width: 25rem;
+    }
+    &Button {
+      padding: 0.5rem 1.7rem;
+      border-radius: 1.4rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      color: #fff;
+      font-size: 1rem;
+      width: 10rem;
+      outline: none;
+    }
+  }
+  &Right {
+    &Photo {
+      max-width: 35rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Main {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    padding: 3rem;
+
+    &Left {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+
+      h3 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 0.9rem;
+        width: 20rem;
+      }
+    }
+    &Right {
+      &Photo {
+        max-width: 20rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.TheHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+
+  &Left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &Logo {
+      margin-right: 1.8rem;
+    }
+  }
+
+  &Right {
+    &Button {
+      padding: 0.4rem 0.9rem;
+      border-radius: 1rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      color: #fff;
+      font-size: 0.8rem;
+    }
+  }
+
+  &Items {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+    color: hsl(0, 0%, 75%);
+    margin-right: 1.8rem;
+    font-weight: 500;
+    &:hover {
+      color: hsl(255, 11%, 22%);
+    }
+  }
+}

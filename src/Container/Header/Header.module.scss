@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1024px) {
+  .Desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Mobile {
+    display: none;
+  }
+}
+
+header {
+  padding: 2rem;
+}

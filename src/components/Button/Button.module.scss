@@ -1,0 +1,16 @@
+.Button {
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: hsl(180, 69%, 65%);
+  }
+  // &:focus {
+  //   background-color: red;
+  // }
+}

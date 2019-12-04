@@ -1,0 +1,80 @@
+.Advanced {
+  // min-height: 100rem;
+
+  background-color: hsl(0, 0%, 95%);
+  padding-bottom: 3rem;
+
+  &Paragraph {
+    text-align: center;
+    h2 {
+      font-weight: 700;
+      color: hsl(255, 11%, 22%);
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+      color: hsl(257, 7%, 63%);
+    }
+  }
+
+  &CardContainer {
+    display: flex;
+    margin-bottom: 8rem;
+    // margin-bottom: 5rem;
+  }
+
+  &Paragraph {
+    margin-bottom: 5rem;
+  }
+
+  &LineBox {
+    transform: translateY(-5000%);
+  }
+  &Line {
+    z-index: 5;
+
+    // position: relative;
+    border: 2px solid hsl(180, 66%, 49%);
+    width: 30rem;
+  }
+}
+
+.card2 {
+  transform: translateY(15%);
+}
+.card3 {
+  transform: translateY(35%);
+}
+
+@media only screen and (max-width: 1300px) {
+  .Advanced {
+    display: flex;
+    flex-direction: column;
+    &Paragraph {
+      h2 {
+        font-weight: 700;
+        color: hsl(255, 11%, 22%);
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        color: hsl(257, 7%, 63%);
+      }
+    }
+    &LineBox {
+      display: none;
+    }
+    &CardContainer {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+  .card2 {
+    transform: translateY(0);
+  }
+  .card3 {
+    transform: translateY(0);
+  }
+}

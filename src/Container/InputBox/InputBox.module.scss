@@ -1,0 +1,74 @@
+.LinkBox {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(257, 27%, 26%);
+  padding: 2rem 0.7rem;
+  // align-items: center;
+  // justify-content: center;
+  border-radius: 0.6rem;
+  background-image: url(../../assets//bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: translateY(-48%);
+
+  &Input {
+    padding: 1rem 0.8rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    width: 60rem;
+    font-size: 1rem;
+    margin-right: 0.9rem;
+  }
+
+  &Button {
+    padding: 1rem 0.8rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+.inputRed {
+  border: 0.15rem solid hsl(0, 87%, 67%);
+}
+.Label {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.InputBox {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 960px) {
+  .LinkBox {
+    flex-direction: column;
+    width: 95%;
+    background-image: url(../../assets//bg-shorten-mobile.svg);
+    background-position: 8rem;
+    background-repeat: no-repeat;
+    align-items: stretch;
+
+    &Input {
+      width: auto;
+      margin-right: 0rem;
+      margin-bottom: 1.7rem;
+    }
+  }
+  .InputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .Label {
+    font-size: 0.7rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    transform: translateY(-450%);
+  }
+}
