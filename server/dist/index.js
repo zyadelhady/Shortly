@@ -26,9 +26,9 @@ typeorm_1.createConnection({
 })
     .then((conn) => {
     const app = express_1.default();
-    app.use(express_1.default.json());
     app.use(cors_1.default());
     app.options('*', cors_1.default());
+    app.use(express_1.default.json());
     app.use('/api/v1/links/', linksRouter_1.default);
     const port = process.env.PORT || 4000;
     const server = app.listen(port, () => {
