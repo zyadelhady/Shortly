@@ -7,7 +7,7 @@ import axios from 'axios';
 import uniqid, { process } from 'uniqid';
 
 const LinkBox = (props) => {
-  const mode = 'dev';
+  const mode = 'prod';
 
   const link =
     mode === 'dev'
@@ -67,6 +67,7 @@ const LinkBox = (props) => {
           <input
             onChange={(e) => getUrl(e)}
             value={url}
+            defaultValue={'Example : https://www.google.com'}
             placeholder=" Shorten a Link here..."
             type="text"
             className={inputClasses.join(' ')}
