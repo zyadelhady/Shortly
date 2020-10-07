@@ -67,8 +67,7 @@ const LinkBox = (props) => {
           <input
             onChange={(e) => getUrl(e)}
             value={url}
-            defaultValue={'Example : https://www.google.com'}
-            placeholder=" Shorten a Link here..."
+            placeholder="Example : https://www.google.com"
             type="text"
             className={inputClasses.join(' ')}
           />
