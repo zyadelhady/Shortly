@@ -27,6 +27,7 @@ createConnection({
 
     app.use(cors());
     app.options('*', cors());
+    app.use(cors({ origin: 'https://shortly-gold.now.sh', credentials: true }));
 
     app.use('/api/v1/links/', linksRouter);
 
