@@ -24,7 +24,7 @@ const LinkBox = (props) => {
     setError(false);
 
     axios
-      .post(link, { url }, { withCredentials: true })
+      .post(link, { url })
       .then((response) => {
         const newId = response.data.data.results.slug;
         const url = response.data.data.results.url;
