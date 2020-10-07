@@ -24,7 +24,7 @@ createConnection({
   .then((conn) => {
     const app = express();
     app.use(express.json());
-
+    /////
     app.use(cors());
     app.options('*', cors());
     app.use(cors({ origin: 'https://shortly-gold.now.sh', credentials: true }));
