@@ -33,7 +33,7 @@ createConnection({
     const server = app.listen(port, () => {
       console.log(`App running on http://127.0.0.1:${port}`);
     });
-
+    /////
     process.on('unhandledRejection', (err: any) => {
       console.log('UNHANDLER REJECTION! SHUTTING DOWN......');
       console.log(err.name, err.message);
