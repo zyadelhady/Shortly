@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from './InputBox.module.scss';
 import Button from '../../components/Button/Button';
 import NewLink from '../../components/NewLink/NewLink';
@@ -34,6 +34,11 @@ const LinkBox = (props) => {
         setHashID((prev) => {
           return [...prev, { newId, url }];
         });
+
+        localStorage.setItem(
+          'links',
+          JSON.stringify([...hashId, { newId, url }])
+        );
       })
       .catch((error) => {
         console.log(error);
@@ -43,6 +48,11 @@ const LinkBox = (props) => {
 
     setUrl('');
   };
+
+  useEffect(() => {
+    const storageItems = localStorage.getItem('links');
+    setHashID(JSON.parse(storageItems));
+  }, []);
 
   const renderNewLink = hashId.map((i) => {
     return (
