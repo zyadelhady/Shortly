@@ -51,7 +51,9 @@ const LinkBox = (props) => {
 
   useEffect(() => {
     const storageItems = localStorage.getItem('links');
-    setHashID(JSON.parse(storageItems));
+    if (storageItems) {
+      setHashID(JSON.parse(storageItems));
+    }
   }, []);
 
   const renderNewLink = hashId.map((i) => {
