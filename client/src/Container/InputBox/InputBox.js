@@ -79,7 +79,7 @@ const LinkBox = (props) => {
           <input
             onChange={(e) => getUrl(e)}
             value={url}
-            placeholder="Example : https://www.google.com"
+            placeholder="Example : https://github.com/zyadelhady"
             type="text"
             className={inputClasses.join(' ')}
           />
